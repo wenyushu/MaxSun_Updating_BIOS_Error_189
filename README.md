@@ -37,25 +37,25 @@ FPT Operation Failed.
 msinfo32
 ```
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/msinfo32.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/msinfo32.png)
 
 + 本文档演示主板为：`铭瑄 B760M 终结者 D5` 
 + 当前 BIOS 版本为：`E1.4D`，`2024/7/31` 更新
 
-![E1.4D](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/E1.4D.png)
+![E1.4D](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/E1.4D.png)
 
 ## `2.` 下载铭瑄官网最新的 BIOS 文件：
 
 + 版本为：`E1.5D` ，时间为：`08/12/2024`
 + 文件名：`MSTerminatorB760MD515.zip`
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/E1.5D.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/E1.5D.png)
 
 ### `2.1` 将 `EFI 文件` 夹拖入 U 盘根目录
 
 + 解压下载好的 `BIOS 更新文件压缩包` ，找到 `Shell Update BIOS` 目录下的 `EFI 文件夹`
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/Efi.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/Efi.png)
 
 + 将 `EFI 文件夹` 拖到 `U 盘根目录` 下，如图所示，但需注意：
   + 此 `U 盘` 不能是含有 `PE` 或 `其它引导` 的 `启动盘`
@@ -63,17 +63,17 @@ msinfo32
   + 格式化 `U 盘` 会清空其内的数据，需做好备份
   + `EFI` 文件夹必须在 `U 盘` 根目录下，且不能含有其它文件
 
-![U](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/U.png)
+![U](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/U.png)
 
 ### `2.2` 编辑 `Startup.nsh` 文件
 
 + 选中 `Startup.nsh` 文件后，接着右键使用 `记事本` 或 `其它文本编辑器` 打开此文件，如图所示
 
-![startup2](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/startup2.png)
+![startup2](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/startup2.png)
 
 + 修改成如下图所示，接着保存即可
 
-![startup3](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/startup3.png)
+![startup3](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/startup3.png)
 
 ***
 
@@ -94,11 +94,11 @@ msinfo32
 
 +  `Advanced` 选项 --->> `NVMe Configuration` 选项
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/NVMeConfiguration1.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/NVMeConfiguration1.png)
 
 + 将这三块硬盘选项设置为 `禁用` ，即由 `Enabled` 设置为 `Disabled`，如图所示 
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/NVMeConfiguration2.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/NVMeConfiguration2.png)
 
 ### `1.2` SATA 部分 
 
@@ -107,17 +107,17 @@ msinfo32
 + `Advanced` 选项 --->> `SATA Configuration` 选项
 + 将 `SATA` 硬盘选项由 `Enabled` 设置为 `Disabled`
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/SATA.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/SATA.png)
 
 ## `2.` 设置 `第一启动项` 为 `U 盘启动`
 
 如下图所示
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/Boot.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/Boot.png)
 
 ## `3.` 等待跑码
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/FPT1.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/FPT1.png)
 
 ## `4.` 跑码结束
 
@@ -125,7 +125,7 @@ msinfo32
 
 按电源键即可关机！
 
-![](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/FPT2.png)
+![](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/FPT2.png)
 
 ## `5.` 启用硬盘
 
@@ -137,7 +137,7 @@ msinfo32
 
 如图所示，`BIOS 版本` 已更新至所需版本~
 
-![BIOS](铭瑄主板更新 BIOS 报错（Error 189 File does not exist）.assets/BIOS.png)
+![BIOS](https://github.com/wenyushu/MaxSun_Updating_BIOS_Error_189/blob/main/Iamge/BIOS.png)
 
 End~
 
